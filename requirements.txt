@@ -2,6 +2,5 @@ folium==0.17.0
 matplotlib==3.8.4
 numpy==2.1.1
 pandas==2.2.3
-seaborn==0.13.2
 streamlit==1.33.0
 streamlit_folium==0.22.1
