@@ -28,7 +28,7 @@ st.markdown("""
 
 
 # Upload Dataset
-all_df = pd.read_csv("all_clean.csv")
+all_df = pd.read_csv("https://raw.githubusercontent.com/iyungalam/AirQuality_Analyst/refs/heads/main/Dashboard/all_clean.csv")
 
 datetime_columns = ["Date"]
 all_df.sort_values(by="Date", inplace=True)
