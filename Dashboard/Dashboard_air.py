@@ -197,7 +197,7 @@ for column in datetime_columns:
     mean_lon = sum(lon for lat, lon in station_coords.values()) / len(station_coords)
     
     # Buat peta dengan Folium
-    m = folium.Map(location=[mean_lat, mean_lon], zoom_start=10)
+    m = folium.Map(location=[-7.9826, 112.6308], zoom_start=12)
     
     # Tambahkan marker untuk setiap stasiun
     for station, coords in station_coords.items():
@@ -222,18 +222,21 @@ for column in datetime_columns:
     st.title("Peta Kualitas Udara")
     st_folium(m, width=500, height=300)
 
+    # Menambahkan header untuk kesimpulan
     st.header("CONCLUSION")
-    """
-    1. Tingkat Polusi Tertinggi Pada Stasiun Wanshouxigong dengan nilai rata-rata polusi sebesar 374.83
-    2. Korelasi antara Temp, WSPM, CO, SO2, No2
-    - Terdapat korelasi antara Temp dengan O3 sebesar 0.59
-    - Terdapat korelasi antara wspm dengan O3 sebesar 0.29
-    - Terdapat korelasi signifikan antara CO dengan NO2 sebesar 0.69 dan SO2 sebesar 0.53
-    - Terdapat korelasi signifikan antara NO2 dengan CO sebesar 0.69 dan SO2 sebesar 0.49
-    - Terdapat korelasi antara O3 dengan temp sebesar 0.59 dan wspm 0.29
-    - Terdapat Korelasi antara SO2 dengan NO2 sebesar 0.49 dan CO sebesar 0.53
-    3. Tingkat Curah hujan Tertinggi berada pada stasiun Aotizhoungxin,Guanyuan, dan Wanliu
-    4. Suhu Tertinggi Berada pada Stasium Gucheng dengan suhu mencapai 41.60^C dan Suhu terendah berada pada stasiun Huairou dengan Suhu -19.90^C
-    """
+    
+    # Menambahkan kesimpulan dengan penjelasan yang lebih rapat
+    st.markdown("""
+    1. **Tingkat Polusi Tertinggi** Pada Stasiun Wanshouxigong dengan nilai rata-rata polusi sebesar 374.83
+    2. **Korelasi antara Temp, WSPM, CO, SO2, NO2:**
+        - Korelasi antara Temp dengan O3 sebesar 0.59
+        - Korelasi antara wspm dengan O3 sebesar 0.29
+        - Korelasi signifikan antara CO dengan NO2 sebesar 0.69 dan SO2 sebesar 0.53
+        - Korelasi signifikan antara NO2 dengan CO sebesar 0.69 dan SO2 sebesar 0.49
+        - Korelasi antara O3 dengan Temp sebesar 0.59 dan wspm 0.29
+        - Korelasi antara SO2 dengan NO2 sebesar 0.49 dan CO sebesar 0.53
+    3. **Tingkat Curah Hujan Tertinggi** berada pada stasiun Aotizhoungxin, Guanyuan, dan Wanliu
+    4. **Suhu Tertinggi** Berada pada Stasiun Gucheng dengan suhu mencapai 41.60°C, dan **Suhu Terendah** berada pada stasiun Huairou dengan suhu -19.90°C
+    """)
     
 st.caption('Copyright (c) Nurul Alam -Chan 2024')
