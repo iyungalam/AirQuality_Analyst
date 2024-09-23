@@ -11,6 +11,9 @@ Rain: Rainfall amount
 Wind Direction: Direction of wind
 Wind Speed: Speed of wind
 
+## Setup Environment - Shell/Terminal
+pip install streamlit-folium
+
 ## ANALYSIS TASK:
 Data Gathering: Gather and load the dataset into Python environment.
 Data Cleaning: Clean the dataset by handling missing values and inconsistencies.
