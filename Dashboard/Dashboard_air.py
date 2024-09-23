@@ -197,7 +197,7 @@ for column in datetime_columns:
     mean_lon = sum(lon for lat, lon in station_coords.values()) / len(station_coords)
     
     # Buat peta dengan Folium
-    m = folium.Map(location=[-7.9826, 112.6308], zoom_start=12)
+    m = folium.Map(location=[mean_lat, mean_lon], zoom_start=10)
     
     # Tambahkan marker untuk setiap stasiun
     for station, coords in station_coords.items():
