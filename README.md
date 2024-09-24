@@ -21,8 +21,8 @@ Summary: Calculate summary statistics for different pollutants and meteorologica
 ## Setup Environment - Anaconda
 **conda create --name main-ds python=3.12.3
 conda activate main-ds
-pip install -r requirements.txt
-**
+pip install -r requirements.txt**
+
 ## Setup Environment - Shell/Terminal
 install dependensi:
 mkdir AirQuality_Analyst
