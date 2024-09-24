@@ -39,7 +39,6 @@ pip install streamlit-folium
 C:\Users\nurul alam\Desktop\AirQuality_Analyst>
 Cd Dashboard
 streamlit run Dashboard_air.py
-
+```
 Streamlit cloud:
 https://airqualityanalystt.streamlit.app/
-```
