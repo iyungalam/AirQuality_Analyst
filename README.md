@@ -19,11 +19,13 @@ Plotting (Visualization): Create visualizations such as scatter plots, bar chart
 Summary: Calculate summary statistics for different pollutants and meteorological parameters.
 
 ## Setup Environment - Anaconda
+'''
 conda create --name main-ds python=3.12.3
 conda activate main-ds
 pip install -r requirements.txt
-
+'''
 ## Setup Environment - Shell/Terminal
+'''
 install dependensi:
 mkdir AirQuality_Analyst
 cd AirQuality_Analyst
@@ -33,9 +35,10 @@ pip install -r requirements.txt
 
 install streamlit:
 pip install streamlit-folium
-
+'''
 
 ## Run steamlit app
+'''
 Lokal:
 C:\Users\nurul alam\Desktop\AirQuality_Analyst>
 Cd Dashboard
@@ -43,3 +46,4 @@ streamlit run Dashboard_air.py
 
 Streamlit cloud:
 https://airqualityanalystt.streamlit.app/
+'''
