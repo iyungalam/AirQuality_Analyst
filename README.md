@@ -1,6 +1,7 @@
 # OVERVIEW
 This repository contains jupyter notebook and data for exploring an air quality dataset. The dataset includes information about various air pollutants such as SO2, NO2, CO, O3, as well as temperature, pressure, rain, wind direction, and wind speed.
 ## VARIABLE:
+
 SO2: Sulfur dioxide concentration
 NO2: Nitrogen dioxide concentration
 CO: Carbon monoxide concentration
@@ -38,7 +39,6 @@ pip install streamlit-folium
 '''
 
 ## Run steamlit app
-'''
 Lokal:
 C:\Users\nurul alam\Desktop\AirQuality_Analyst>
 Cd Dashboard
@@ -46,4 +46,3 @@ streamlit run Dashboard_air.py
 
 Streamlit cloud:
 https://airqualityanalystt.streamlit.app/
-'''
